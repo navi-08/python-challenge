@@ -3,7 +3,7 @@ import csv
 # Define the file path where your CSV data is located
 file_path = r'C:\Users\navje\OneDrive\Desktop\data_analysis\python-challenge\budget_data.csv'
 
-# Initialize variables to keep track of financial data
+#track of financial data
 total_months = 0
 net_profit_loss = 0
 changes = []
@@ -33,7 +33,7 @@ average_change = sum(changes) / len(changes)
 greatest_increase = max(changes)
 greatest_decrease = min(changes)
 
-# Find the corresponding months for the increase and decrease
+# Find the months for the increase and decrease
 greatest_increase_month = header[0]
 greatest_decrease_month = header[0]
 
@@ -46,7 +46,7 @@ print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease})")
 
-# Optionally, you can save the results to a text file
+#save the results to a text file
 with open('financial_analysis.txt', 'w') as output_file:
     output_file.write("Financial Analysis\n")
     output_file.write("----------------------------\n")
